@@ -1,7 +1,8 @@
 <h1 align="center">Hi 👋, I'm Yemah</h1>
 <h3 align="center">A passionate SysAdmin and networking Engineering</h3>
 
-<img src="./img/" alt="Ttroll">
+<!-- ICI IMAGE -->
+<img src="./img/" alt="Ttroll"> 
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=23&duration=3000&pause=1000&color=76F6B0&vCenter=true&width=435&lines=Hello,+I'm+Yemah!;BOUH;Welcome+to+my+GitHub!)](https://git.io/typing-svg)
 
