@@ -55,7 +55,12 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 ![Architecture](https://raw.githubusercontent.com/Yemah/resilience-infrastructure-portfolio/main/architecture/diagrams/clinique_chatelet_architecture.png)
 
+---
+
 🔗 **[Explorer la documentation technique de la Haute Disponibilité OPNsense](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/configs/firewall/opnsense-ha-vlan-proof.md)**
+
+---
+
 🔗 **[Explorer la documentation de la politique Zero-Trust](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/configs/proxy/authelia-zero-trust-gateway.md)**
 
 ---
