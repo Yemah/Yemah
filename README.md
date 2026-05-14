@@ -62,17 +62,15 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 ---
 
 ---
-
 🔗 **[Explorer le contexte et la documentation du projet](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/README.md)**
-
 ---
 
+---
 🔗 **[Explorer la documentation technique de la Haute Disponibilité OPNsense](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/configs/firewall/opnsense-ha-vlan-proof.md)**
-
 ---
 
+---
 🔗 **[Explorer la documentation de la politique Zero-Trust](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/configs/proxy/authelia-zero-trust-gateway.md)**
-
 ---
 
 ## 💼 Expériences Professionnelles
@@ -134,9 +132,6 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 ## 📊 Statistiques GitHub
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Yemah&show_icons=true&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Yemah&layout=compact&theme=tokyonight)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=Yemah&theme=tokyonight)
 
@@ -159,3 +154,8 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 <p align="center">
   <em>"Sécuriser l'architecture d'aujourd'hui pour anticiper les menaces de demain."</em>
 </p>
+
+># ⭐ Support
+
+Si vous trouvez mon travail intéressant,  
+n'hésitez pas à **donner une étoile ⭐ au repository** !
