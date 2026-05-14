@@ -58,7 +58,9 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 ---
 
 ---
+
 🔗 **[Explorer le contexte et la documentation du projet](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/README.md)**
+
 ---
 
 🔗 **[Explorer la documentation technique de la Haute Disponibilité OPNsense](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/configs/firewall/opnsense-ha-vlan-proof.md)**
@@ -73,8 +75,8 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 ### 🌐 Administrateur Système et Réseau (Alternance)
 **BSRQ.MEDIA** | *Sept 2024 – Oct 2025*
-* Administration d'une infrastructure réseau hybride (Cisco, Aruba, OPNsense) garantissant un SLA de 99,9%.
-* Déploiement d'une architecture Zero Trust : tunnels WireGuard et authentification MFA (Azure AD).
+* Refonte et administration d'une infrastructure réseau hybride (Cisco, Mikrotik, Aruba, OPNsense) garantissant un SLA de 99,9%.
+* Déploiement d'une architecture Zero Trust : tunnels OpenVPN-AS/WireGuard avec authentification MFA (Azure AD).
 * Réduction du temps de résolution des incidents à < 2h grâce à un monitoring proactif (Zabbix) et à l'automatisation (scripts Bash/Python).
 
 ### 🛡️ Analyste Infrastructure et Sécurité (Stage)
@@ -97,6 +99,7 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 ![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![WireGuard](https://img.shields.io/badge/WireGuard-881798?style=for-the-badge&logo=wireguard&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
+![Mikrotik](https://img.shields.io/badge/Wireshark-1699AZ?style=for-the-badge&logo=mikrotik&logoColor=white)
 
 ### Cybersécurité (Blue Team)
 ![Wazuh](https://img.shields.io/badge/Wazuh-00A9E0?style=for-the-badge&logo=wazuh&logoColor=white)
