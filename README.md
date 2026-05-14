@@ -127,10 +127,25 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 ## 📊 Statistiques GitHub
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=steeve-worno&show_icons=true&theme=tokyonight" alt="GitHub Stats" width="48%">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=steeve-worno&layout=compact&theme=tokyonight" alt="Top Languages" width="48%">
-</p>
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=yemah&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yemah&layout=compact&theme=tokyonight)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=yemah&theme=tokyonight)
+
+---
+
+## 🤝 Connectons-nous & Collaborons !
+## Let's Connect & Collaborate !
+
+### 📬 Informations de Contact
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/steeve-womo/)
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:womo.steeven@gmail.com)
+
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yemah)
+
 
 ---
 
