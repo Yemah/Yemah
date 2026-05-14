@@ -5,7 +5,7 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Ingénieur+Infrastructure+%26+Sécurité;Zero+Trust+%7C+Network+Security;SOC+Analyst+%7C+SIEM+Builder;Haute+Disponibilité+%26+Cloud" alt="Typing SVG" /></a>
 </p>
 
-<h1 align="center">Bonjour, je suis Steeve WOMO TCHINDA, Je construis et sécurise des infrastructures qui ne tombent pas en panne et quand elles sont attaquées, je le sais avant que ça fasse mal.</h1>
+<h1 align="center">Hello Bienvenu, je suis Steeve WOMO TCHINDA, Je construis et sécurise des infrastructures qui ne tombent pas en panne et quand elles sont attaquées, je le sais avant que ça fasse mal.</h1>
 
 <p align="center">
 🛡️ Cybersécurité | Réseaux & Systèmes | Maintien en Condition Opérationnelle (MCO)<br>
