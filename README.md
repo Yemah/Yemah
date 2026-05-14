@@ -99,7 +99,7 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 ![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![WireGuard](https://img.shields.io/badge/WireGuard-881798?style=for-the-badge&logo=wireguard&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![Mikrotik](https://img.shields.io/badge/Wireshark-1699AZ?style=for-the-badge&logo=mikrotik&logoColor=white)
+![Mikrotik](https://img.shields.io/badge/Mikrotik-1699AZ?style=for-the-badge&logo=mikrotik&logoColor=white)
 
 ### Cybersécurité (Blue Team)
 ![Wazuh](https://img.shields.io/badge/Wazuh-00A9E0?style=for-the-badge&logo=wazuh&logoColor=white)
