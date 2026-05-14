@@ -5,6 +5,10 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Ingénieur+Infrastructure+%26+Sécurité;Zero+Trust+%7C+Network+Security;SOC+Analyst+%7C+SIEM+Builder;Haute+Disponibilité+%26+Cloud" alt="Typing SVG" /></a>
 </p>
 
+<p align="center">
+<img src="https://github.com/user-attachments/assets/6bdd8192-08ef-4e53-aab6-80b14161f302" width="180"/>
+</p>
+
 <h1 align="center">Hello Bienvenu, je suis Steeve WOMO TCHINDA, Je construis et sécurise des infrastructures qui ne tombent pas en panne et quand elles sont attaquées, je le sais avant que ça fasse mal.</h1>
 
 <p align="center">
