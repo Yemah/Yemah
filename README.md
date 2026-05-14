@@ -127,11 +127,11 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 ## 📊 Statistiques GitHub
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=yemah&show_icons=true&theme=tokyonight)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Yemah&show_icons=true&theme=tokyonight)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yemah&layout=compact&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Yemah&layout=compact&theme=tokyonight)
 
-![GitHub Streak](https://streak-stats.demolab.com?user=yemah&theme=tokyonight)
+![GitHub Streak](https://streak-stats.demolab.com?user=Yemah&theme=tokyonight)
 
 ---
 
