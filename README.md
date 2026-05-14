@@ -54,11 +54,11 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 > **Visualisation de l'architecture :**
 
 <p align="center">
-  <img src="architecture/diagrams/clinique_chatelet_architecture.png" width="800" alt="Schéma d'architecture">
+  <img src="./resilience-portfolio/architecture/diagrams/clinique_chatelet_architecture.png" width="800" alt="Schéma d'architecture">
 </p>
 
-🔗 **[Explorer la documentation technique de la Haute Disponibilité OPNsense](../resilience-portfolio/configs/firewall/opnsense-ha-vlan-proof.md)**
-🔗 **[Explorer la documentation de la politique Zero-Trust](../resilience-portfolio/configs/proxy/authelia-zero-trust-gateway.md)**
+🔗 **[Explorer la documentation technique de la Haute Disponibilité OPNsense](./resilience-portfolio/configs/firewall/opnsense-ha-vlan-proof.md)**
+🔗 **[Explorer la documentation de la politique Zero-Trust](./resilience-portfolio/configs/proxy/authelia-zero-trust-gateway.md)**
 
 ---
 
