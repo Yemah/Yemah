@@ -57,6 +57,10 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 ---
 
+---
+🔗 **[Explorer le contexte et la documentation du projet](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/README.md)**
+---
+
 🔗 **[Explorer la documentation technique de la Haute Disponibilité OPNsense](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/configs/firewall/opnsense-ha-vlan-proof.md)**
 
 ---
