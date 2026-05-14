@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/6bdd8192-08ef-4e53-aab6-80b14161f302" width="180"/>
+<img src="https://raw.githubusercontent.com/Yemah/Yemah/main/gitProfile.jpg" width="180"/>
 </p>
 
 <h1 align="center">Hello Bienvenu, je suis Steeve WOMO TCHINDA, Je construis et sécurise des infrastructures qui ne tombent pas en panne et quand elles sont attaquées, je le sais avant que ça fasse mal.</h1>
