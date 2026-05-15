@@ -48,30 +48,58 @@ Je suis à la recherche active d'un **Stage de fin d'étude immédiatement** et 
 
 ## 👑 Projet Phare : Le Projet Résilience (Infrastructure HDS)
 
-Ce portfolio documente la conception de A à Z d'une **infrastructure de santé fictive (Clinique Le Châtelet)** répondant aux exigences réglementaires HDS, NIS2 et RGPD. Ce n'est pas un simple laboratoire, c'est une architecture d'entreprise micro-segmentée et hautement résiliente.
-
-* **Réseau HA :** Cluster de pare-feux OPNsense en mode Actif/Passif (CARP + pfSync) avec micro-segmentation en 6 VLANs hermétiques.
-* **Zero Trust :** Portail Web protégé par Reverse Proxy (Nginx) et MFA obligatoire (Authelia LDAP).
-* **SOC Interne :** Déploiement centralisé de 10 agents Wazuh (FIM, détection Anti-Forensics) avec remédiation automatisée (Active Response).
-* **Continuité (MCO/PRA) :** Supervision complète via Zabbix (Alerting SMTP) et isolation des sauvegardes critiques avec Veeam dans un VLAN sanctuarisé.
+Ce portfolio documente la conception de A à Z d'une **infrastructure de santé fictive (Clinique Le Châtelet)** répondant aux exigences réglementaires HDS, NIS2 et RGPD. Ce n'est pas un simple laboratoire, c'est une architecture d'entreprise micro-segmentée durcie et hautement résiliente. Vous pouvez explorer chaque brique technique via les liens ci-dessous :
 
 > **Visualisation de l'architecture :**
+<p align="center">
+  <a href="https://github.com/Yemah/resilience-infrastructure-portfolio"><img src="https://raw.githubusercontent.com/Yemah/resilience-infrastructure-portfolio/main/architecture/diagrams/clinique_chatelet_architecture.png" width="800" alt="Schéma d'architecture"></a>
+</p>
 
-![Architecture](https://raw.githubusercontent.com/Yemah/resilience-infrastructure-portfolio/main/architecture/diagrams/clinique_chatelet_architecture.png)
 
----
 
----
-🔗 **[Explorer le contexte et Vue d'ensemble du projet](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/README.md)**
----
-
----
-🔗 **[Explorer la documentation technique de la Haute Disponibilité OPNsense](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/configs/firewall/opnsense-ha-vlan-proof.md)**
----
+### 🖥️ 1. Infrastructure Core & Identité (Tier 0)
+L'épine dorsale du système est un Active Directory hautement disponible (DC1/DC2). Il centralise les identités et sécurise les postes de travail via des GPOs restrictives (SMBv1 désactivé, LAPS, Audit strict). L'authentification LDAP est chiffrée (LDAPS).
 
 ---
-🔗 **[Explorer la documentation de la politique Zero-Trust](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/configs/proxy/authelia-zero-trust-gateway.md)**
+🔗 **[Voir la documentation : Durcissement Active Directory & GPO](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/systems/active-directory-hardening.md)**
 ---
+
+### 🌐 2. Haute Disponibilité Réseau (HA)
+Cluster de pare-feux OPNsense en mode Actif/Passif (CARP + pfSync). Le réseau est micro-segmenté en 6 VLANs hermétiques pour empêcher les mouvements latéraux des ransomwares.
+
+---
+🔗 **[Voir la documentation : Cluster OPNsense & Segmentation VLAN](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/firewall/opnsense-ha-vlan-proof.md)**
+---
+
+### 🔐 3. Architecture Zero-Trust & Application Web
+L'application médicale (Node.js + Oracle) n'est jamais exposée sur Internet. L'accès passe par un Reverse Proxy Nginx couplé à Authelia qui impose un MFA (TOTP) validé via l'Active Directory.
+
+---
+🔗 **[Voir la documentation : Portail Captif & MFA Authelia](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/proxy/authelia-zero-trust-gateway.md)**
+---
+---
+🔗 **[Voir la documentation : Déploiement App Node.js (RBAC)](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/app/srv-web-deployment.md)**
+---
+
+### 🕵️ 4. SOC Interne & Détection (Wazuh)
+Déploiement centralisé de 10 agents Wazuh couvrant Windows, Linux et FreeBSD. Configuration du FIM (File Integrity Monitoring) et mise en place d'une *Active Response* (SOAR) pour bannir automatiquement les IP attaquantes au niveau du pare-feu.
+
+---
+🔗 **[Voir la documentation : SOC Wazuh & Remédiation SOAR](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/siem/wazuh-advanced-architecture.md)**
+---
+
+### 📊 5. Continuité : PRA & MCO (Veeam + Zabbix)
+La sauvegarde des VM est gérée par Veeam dans un VLAN sanctuarisé. La supervision applicative est assurée par Zabbix, avec remontée d'alertes SMTP (Mailpit) en temps réel.
+
+---
+🔗 **[Voir la documentation : Plan de Reprise d'Activité (Veeam)](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/backup/veeam-resilience-pra.md)**
+---
+---
+🔗 **[Voir la documentation : Stratégie d'Alerte SMTP Zabbix](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/monitoring/zabbix-alerting-strategy.md)**
+---
+
+---
+
 
 ## 💼 Expériences Professionnelles
 
