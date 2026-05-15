@@ -56,6 +56,9 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 </p>
 
 
+---
+🔗 **[Explorer le contexte et Vue d'ensemble du projet](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/README.md)**
+---
 
 ### 🖥️ 1. Infrastructure Core & Identité (Tier 0)
 L'épine dorsale du système est un Active Directory hautement disponible (DC1/DC2). Il centralise les identités et sécurise les postes de travail via des GPOs restrictives (SMBv1 désactivé, LAPS, Audit strict). L'authentification LDAP est chiffrée (LDAPS).
