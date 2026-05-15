@@ -48,7 +48,7 @@ Je suis à la recherche active d'un **Stage de fin d'étude immédiatement** et 
 
 ## 👑 Projet Phare : Le Projet Résilience (Infrastructure HDS)
 
-Ce portfolio documente la conception de A à Z d'une **infrastructure de santé fictive (Clinique Le Châtelet)** répondant aux exigences réglementaires HDS, NIS2 et RGPD. Ce n'est pas un simple laboratoire, c'est une architecture d'entreprise micro-segmentée durcie et hautement résiliente. Vous pouvez explorer chaque brique technique via les liens ci-dessous :
+Ce portfolio documente la conception de A à Z d'une **infrastructure de santé fictive (Clinique Le Châtelet)** répondant aux exigences réglementaires HDS, NIS2 et RGPD. Ce n'est pas un simple laboratoire, c'est une architecture d'entreprise micro-segmentée, durcie et hautement résiliente. Vous pouvez explorer chaque brique technique via les liens ci-dessous :
 
 > **Visualisation de l'architecture :**
 <p align="center">
