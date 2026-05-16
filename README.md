@@ -85,7 +85,7 @@ L'application médicale (Node.js + Oracle) n'est jamais exposée sur Internet. L
 ---
 
 ### 🕵️ 4. SOC Interne & Détection (Wazuh)
-Déploiement centralisé de 10 agents Wazuh couvrant Windows, Linux et FreeBSD. Configuration du FIM (File Integrity Monitoring) et mise en place d'une *Active Response* (SOAR) pour bannir automatiquement les IP attaquantes au niveau du pare-feu.
+Déploiement centralisé de 11 agents Wazuh couvrant Windows, Linux et FreeBSD. Configuration du FIM (File Integrity Monitoring) et mise en place d'une *Active Response* (SOAR) pour bannir automatiquement les IP attaquantes au niveau du pare-feu.
 
 ---
 👉🔗 **[Voir la documentation : SOC Wazuh & Remédiation SOAR](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/siem/wazuh-advanced-architecture.md)**
