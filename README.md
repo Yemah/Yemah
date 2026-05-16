@@ -57,7 +57,7 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 
 ---
-🔗 **[Explorer le contexte et Vue d'ensemble du projet](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/README.md)**
+👉🔗 **[Explorer le contexte et Vue d'ensemble du projet](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/README.md)**
 ---
 
 ### 🖥️ 1. Infrastructure Core & Identité (Tier 0)
