@@ -39,10 +39,10 @@ Je suis à la recherche active d'un **Stage de fin d'étude immédiatement** et 
 
 | 🛡️ Sécurité & SOC | 🌐 Réseaux & Firewalling | 💻 Systèmes & Virtualisation | ⚙️ Automatisation & MCO |
 |---|---|---|---|
-| SIEM Wazuh & Splunk | OPNsense (CARP/HA) & Mikrotik | VMware ESXi & vCenter | Bash, Python, PowerShell |
-| Détection d'intrusions | VLAN 802.1Q, VPN (WireGuard) | Windows Server 2022 (AD, GPO) | Zabbix, IPAM/DCIM (NetBox) |
-| IAM, Authelia, MFA | Cisco (CCNA en cours) | Ubuntu, Oracle Linux, FreeBSD | Plan de Reprise d'Activité |
-| Zero Trust Architecture | Filtrage, NAT, Routage | Veeam Backup & Replication | CI/CD & Kubernetes (Notions) |
+| SIEM Wazuh & Splunk | OPNsense (CARP/HA), Fortigate & Mikrotik | VMware ESXi/vCenter, Proxmox | Bash, Python, PowerShell |
+| Détection d'intrusions | VLAN 802.1Q, VPN (WireGuard/IPSec) | Windows Server 2022 (AD, GPO) | Zabbix, IPAM/DCIM (NetBox) |
+| IAM, Authelia, MFA | Cisco (CCNA en cours) | Ubuntu, Oracle Linux, Red hat, FreeBSD | Plan de Reprise d'Activité |
+| Zero Trust Architecture | Filtrage, ACL, NAT, Routage/Switching | Veeam Backup & Replication | CI/CD & Kubernetes, Ansible & Terraform (Notions) |
 
 ---
 
