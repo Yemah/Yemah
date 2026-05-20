@@ -83,12 +83,12 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 ## 💼 Parcours
 
 | Période | Formation | Entreprise |
-|---|---|---|
-| 2026 – 2028     | Master Sécurité informatique et cybermenaces | **CNAM** Angers |
-| 2024 – 2026     | Mastère Expert Réseau Infrastructure et Sécurité (RNCP N7) | **IMIE Paris** Levallois-Perret |
-| 2024 – 2025     | Mastère Expert Réseau Infrastructure et Sécurité | **IMIE Paris** Levallois-Perret |
-| 2023 – 2024     | Cycle Ingénieur Informatique et Réseau Année 3 | **ESAIP Ecole d'Ingénieurs** Saint Barthélémy d'Anjou |
-| 2022 – 2023     | Bachelor Conception des Systèmes de l'Information | **3IL Ingénieurs** Limoges |
+|---      | ---       |---         |
+|     2026 – 2028     | Master Sécurité informatique et cybermenaces | **CNAM** Angers |
+|     2024 – 2026     | Mastère Expert Réseau Infrastructure et Sécurité (RNCP N7) | **IMIE Paris** Levallois-Perret |
+|     2024 – 2025     | Mastère Expert Réseau Infrastructure et Sécurité | **IMIE Paris** Levallois-Perret |
+|     2023 – 2024     | Cycle Ingénieur Informatique et Réseau Année 3 | **ESAIP Ecole d'Ingénieurs** Saint Barthélémy d'Anjou |
+|     2022 – 2023     | Bachelor Conception des Systèmes de l'Information | **3IL Ingénieurs** Limoges |
 
 **Certifications** : CCNA 200-301 (en cours) · Az-900 Azure Fundamentals · Scrum Fundamentals
 
