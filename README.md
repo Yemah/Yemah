@@ -50,35 +50,10 @@ Je suis à la recherche active d'un **Stage de fin d'étude immédiatement** et 
 
 Ce portfolio documente la conception de A à Z d'une **infrastructure de santé fictive (Clinique Le Châtelet)** répondant aux exigences réglementaires HDS, NIS2 et RGPD. Ce n'est pas un simple laboratoire, c'est une architecture d'entreprise micro-segmentée, durcie et hautement résiliente. 
 
-### >🏗️ Architecture
-
-```
-                         ┌──────────────┐
-                         │   INTERNET   │
-                         └──────┬───────┘
-                                │
-                    ┌───────────┴───────────┐
-                    │   Cluster HA OPNsense  │
-                    │   FW1 ◄──pfSync──► FW2 │
-                    │   6 VIPs CARP (.254)   │
-                    └───────────┬───────────┘
-                        Trunk 802.1Q (VGT 4095)
-                                │
-     ┌─────────┬────────────┬───┴───┬────────────┬──────────┐
-     │         │            │       │            │          │
-┌────┴─────┐┌──┴─────┐┌────┴───┐┌──┴───────┐┌───┴────┐┌───┴─────┐
-│ VLAN 111 ││VLAN 222││VLAN 333││ VLAN 444 ││VLAN 555││VLAN 999 │
-│   SRV    ││ CLIENT ││  DMZ   ││  BACKUP  ││ GUEST  ││  MGMT   │
-│──────────││────────││────────││──────────││────────││─────────│
-│DC1+DC2   ││Postes  ││Nginx   ││Veeam B&R ││Internet││Bastion  │
-│Oracle 21c││travail ││+MFA    ││300Go repo││  seul  ││BitLocker│
-│Zabbix    ││soignant││Portail ││15 VMs    ││        ││9 GPOs   │
-│Wazuh     ││        ││Mailpit ││protégées ││        ││         │
-│GLPI      ││        ││        ││          ││        ││         │
-└──────────┘└────────┘└────────┘└──────────┘└────────┘└─────────┘
-172.16.11.0 172.16.22.0 172.16.33.0 172.16.44.0 172.16.55.0 172.16.99.0
-```
-
+> **Visualisation de l'architecture :**
+<p align="center">
+  <a href="https://github.com/Yemah/clinique-chatelet-secure-infra"><img src="https://raw.githubusercontent.com/Yemah/clinique-chatelet-secure-infra/main/docs/assets/diagrams/clinique-chatelet-architecture.png" width="800" alt="Schéma d'architecture"></a>
+</p>
 
 ➡️ **[Voir le repo](https://github.com/Yemah/clinique-chatelet-secure-infra)** · **[Voir la documentation](https://yemah.github.io/clinique-chatelet-secure-infra/)**
 
