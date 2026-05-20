@@ -33,7 +33,7 @@
 
 ## 🚀 À propos de moi
 
-Actuellement en fin de cycle **Mastère Cybersécurité et Cloud (Titre RNCP Niveau 7)** à l'IMIE Paris, je poursuis un Master Sécurité Informatique au CNAM Angers à la prochaine rentrée. Fort de **2 ans d'expérience terrain**, je conçois, administre et sécurise des environnements hybrides hautement disponibles.
+Actuellement en fin de formation **Expert Réseau Infrastructure et Sécurité (Titre RNCP Niveau 7)** à l'IMIE Paris, je poursuis un Master Sécurité Informatique au CNAM Angers à la prochaine rentrée. Fort de **2 ans d'expérience terrain**, je conçois, administre et sécurise des environnements hybrides hautement disponibles.
 
 Je suis à la recherche active d'un **Stage de fin d'étude immédiatement** et d'une **alternance de 24 mois à la prochaine rentrée 2026** pour consolider mon expertise opérationnelle en cybersécurité au sein d'une entreprise dynamique et innovante.
 
@@ -82,7 +82,7 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 ➡️ **[Voir le repo](https://github.com/Yemah/clinique-chatelet-secure-infra)** · **[Voir la documentation](https://yemah.github.io/clinique-chatelet-secure-infra/)**
 
----
+
 
 ## 💼 Expériences Professionnelles
 
