@@ -48,61 +48,41 @@ Je suis à la recherche active d'un **Stage de fin d'étude immédiatement** et 
 
 ## 👑 Projet Phare : Le Projet Résilience (Infrastructure HDS)
 
-Ce portfolio documente la conception de A à Z d'une **infrastructure de santé fictive (Clinique Le Châtelet)** répondant aux exigences réglementaires HDS, NIS2 et RGPD. Ce n'est pas un simple laboratoire, c'est une architecture d'entreprise micro-segmentée, durcie et hautement résiliente. Vous pouvez explorer chaque brique technique via les liens ci-dessous :
+Ce portfolio documente la conception de A à Z d'une **infrastructure de santé fictive (Clinique Le Châtelet)** répondant aux exigences réglementaires HDS, NIS2 et RGPD. Ce n'est pas un simple laboratoire, c'est une architecture d'entreprise micro-segmentée, durcie et hautement résiliente. 
 
-> **Visualisation de l'architecture :**
-<p align="center">
-  <a href="https://github.com/Yemah/resilience-infrastructure-portfolio"><img src="https://raw.githubusercontent.com/Yemah/resilience-infrastructure-portfolio/main/architecture/diagrams/clinique_chatelet_architecture.png" width="800" alt="Schéma d'architecture"></a>
-</p>
+### >🏗️ Architecture
+
+```
+                         ┌──────────────┐
+                         │   INTERNET   │
+                         └──────┬───────┘
+                                │
+                    ┌───────────┴───────────┐
+                    │   Cluster HA OPNsense  │
+                    │   FW1 ◄──pfSync──► FW2 │
+                    │   6 VIPs CARP (.254)   │
+                    └───────────┬───────────┘
+                        Trunk 802.1Q (VGT 4095)
+                                │
+     ┌─────────┬────────────┬───┴───┬────────────┬──────────┐
+     │         │            │       │            │          │
+┌────┴─────┐┌──┴─────┐┌────┴───┐┌──┴───────┐┌───┴────┐┌───┴─────┐
+│ VLAN 111 ││VLAN 222││VLAN 333││ VLAN 444 ││VLAN 555││VLAN 999 │
+│   SRV    ││ CLIENT ││  DMZ   ││  BACKUP  ││ GUEST  ││  MGMT   │
+│──────────││────────││────────││──────────││────────││─────────│
+│DC1+DC2   ││Postes  ││Nginx   ││Veeam B&R ││Internet││Bastion  │
+│Oracle 21c││travail ││+MFA    ││300Go repo││  seul  ││BitLocker│
+│Zabbix    ││soignant││Portail ││15 VMs    ││        ││9 GPOs   │
+│Wazuh     ││        ││Mailpit ││protégées ││        ││         │
+│GLPI      ││        ││        ││          ││        ││         │
+└──────────┘└────────┘└────────┘└──────────┘└────────┘└─────────┘
+172.16.11.0 172.16.22.0 172.16.33.0 172.16.44.0 172.16.55.0 172.16.99.0
+```
 
 
----
-👉🔗 **[Explorer le contexte et Vue d'ensemble du projet](https://github.com/Yemah/resilience-infrastructure-portfolio/tree/main/README.md)**
----
-
-### 🖥️ 1. Infrastructure Core & Identité (Tier 0)
-L'épine dorsale du système est un Active Directory hautement disponible (DC1/DC2). Il centralise les identités et sécurise les postes de travail via des GPOs restrictives (SMBv1 désactivé, LAPS, Audit strict). L'authentification LDAP est chiffrée (LDAPS).
-
----
-👉🔗 **[Voir la documentation : Durcissement Active Directory & GPO](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/systems/active-directory-hardening.md)**
----
-
-### 🌐 2. Haute Disponibilité Réseau (HA)
-Cluster de pare-feux OPNsense en mode Actif/Passif (CARP + pfSync). Le réseau est micro-segmenté en 6 VLANs hermétiques pour empêcher les mouvements latéraux des ransomwares.
-
----
-👉🔗 **[Voir la documentation : Cluster OPNsense & Segmentation VLAN](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/firewall/opnsense-ha-vlan-proof.md)**
----
-
-### 🔐 3. Architecture Zero-Trust & Application Web
-L'application médicale (Node.js + Oracle) n'est jamais exposée sur Internet. L'accès passe par un Reverse Proxy Nginx couplé à Authelia qui impose un MFA (TOTP) validé via l'Active Directory.
-
----
-👉🔗 **[Voir la documentation : Portail Captif & MFA Authelia](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/proxy/authelia-zero-trust-gateway.md)**
----
----
-👉🔗 **[Voir la documentation : Déploiement App Node.js (RBAC)](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/app/srv-web-deployment.md)**
----
-
-### 🕵️ 4. SOC Interne & Détection (Wazuh)
-Déploiement centralisé de 11 agents Wazuh couvrant Windows, Linux et FreeBSD. Configuration du FIM (File Integrity Monitoring) et mise en place d'une *Active Response* (SOAR) pour bannir automatiquement les IP attaquantes au niveau du pare-feu.
+➡️ **[Voir le repo](https://github.com/Yemah/clinique-chatelet-secure-infra)** · **[Voir la documentation](https://yemah.github.io/clinique-chatelet-secure-infra/)**
 
 ---
-👉🔗 **[Voir la documentation : SOC Wazuh & Remédiation SOAR](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/siem/wazuh-advanced-architecture.md)**
----
-
-### 📊 5. Continuité : PRA & MCO (Veeam + Zabbix)
-La sauvegarde des VM est gérée par Veeam dans un VLAN sanctuarisé. La supervision applicative est assurée par Zabbix, avec remontée d'alertes SMTP (Mailpit) en temps réel.
-
----
-👉🔗 **[Voir la documentation : Plan de Reprise d'Activité (Veeam)](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/backup/veeam-resilience-pra.md)**
----
----
-👉🔗 **[Voir la documentation : Stratégie d'Alerte SMTP Zabbix](https://github.com/Yemah/resilience-infrastructure-portfolio/blob/main/configs/monitoring/zabbix-alerting-strategy.md)**
----
-
----
-
 
 ## 💼 Expériences Professionnelles
 
@@ -124,6 +104,55 @@ La sauvegarde des VM est gérée par Veeam dans un VLAN sanctuarisé. La supervi
 * Surveillance des journaux système et gestion des incidents de sécurité N1/N2.
 
 ---
+
+## 💼 Parcours
+
+| Période | Poste | Entreprise |
+|---|---|---|
+| 2026 – 2028 | Master Sécurité informatique et cybermenaces | **CNAM** Angers |
+| 2024 – 2026 | Mastère Cybersécurité et Cloud (RNCP N7) | **IMIE** Paris |
+| 2024 – 2025 | Admin Système et Réseau (alternance) | **BSRQ.MEDIA** Issy-les-Moulineaux |
+| 2023 | Analyst Infrastructure et Sécurité (stage) | **ACS'IT** Limoges |
+| 2022 | Administrateur Système (stage) | **CAMTEL** Douala |
+
+**Certifications** : CCNA 200-301 (en cours) · Az-900 Azure Fundamentals · Scrum Fundamentals
+
+---
+
+## 🛠️ Stack technique
+
+**Réseaux & Sécurité**
+
+![OPNsense](https://img.shields.io/badge/OPNsense-D94F00?style=flat-square&logo=opnsense&logoColor=white)
+![MikroTik](https://img.shields.io/badge/MikroTik-293239?style=flat-square&logo=mikrotik&logoColor=white)
+![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat-square&logo=wireguard&logoColor=white)
+![OpenVPN](https://img.shields.io/badge/OpenVPN-EA7E20?style=flat-square&logo=openvpn&logoColor=white)
+
+**SIEM / Monitoring**
+
+![Wazuh](https://img.shields.io/badge/Wazuh-3CBCB4?style=flat-square&logo=wazuh&logoColor=white)
+![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+
+**Systèmes & Virtualisation**
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Windows Server](https://img.shields.io/badge/Windows_Server-0078D4?style=flat-square&logo=windows&logoColor=white)
+![VMware](https://img.shields.io/badge/VMware_ESXi-607078?style=flat-square&logo=vmware&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+
+**Scripting & Cloud**
+
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat-square&logo=microsoft-azure&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
+
+
 
 ## 🛠️ Stack Technique & Outils
 
