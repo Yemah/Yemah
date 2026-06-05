@@ -63,20 +63,22 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 ### 🌐 Administrateur Système et Réseau (Alternance)
 **BSRQ.MEDIA** | *Sept 2024 – Oct 2025*
-* Refonte et administration d'une infrastructure réseau hybride (Cisco, Mikrotik, Aruba, OPNsense) garantissant un SLA de 99,9%.
-* Déploiement d'une architecture Zero Trust : tunnels OpenVPN-AS/WireGuard avec authentification MFA (Azure AD).
-* Réduction du temps de résolution des incidents à < 2h grâce à un monitoring proactif (Zabbix) et à l'automatisation (scripts Bash/Python).
+* Refonte Architecturale & Segmentation : Conception et déploiement en autonomie d'une architecture réseau sécurisée (passage d'un réseau plat à une infrastructure segmentée VLANs), intégrant un firewall MikroTik et une redondance Dual-WAN (Orange/SFR) pour un site de production critique.
+* Administration Hybride & MCO : Gestion complète d'une infrastructure bi-sites hétérogène (Windows Server AD/DNS/DHCP/GPO, Linux, Proxmox) et d'équipements réseaux (Cisco, Aruba, OPNsense en HA), assurant la continuité de service et la résolution d'incidents N1 à N3.
+* Sécurisation Zero Trust : Implémentation d'une stratégie Zero Trust sur un périmètre ранее non protégé : déploiement de VPN inter-sites (WireGuard, OpenVPN-AS), authentification forte (MFA, SSO Azure AD/Entra ID) et contrôle d'accès via bastion Apache Guacamole.
+Automatisation & Documentation : Automatisation des tâches d'exploitation récurrentes via scripts Python et Bash, et maintien d'une documentation technique à jour (IPAM/DCIM) via NetBox pour une traçabilité totale.
+* Support & Gestion de Parc : Pilotage du support IT interne, gestion du cycle de vie des équipements et coordination technique avec les prestataires externes.
 
 ### 🛡️ Analyste Infrastructure et Sécurité (Stage)
 **ACS'IT** | *Mai 2023 – Août 2023*
-* Déploiement de la plateforme SIEM Wazuh sur un parc de plus de 80 terminaux.
-* Analyse et corrélation de logs multi-sources, diminuant le délai de détection des incidents de 40%.
-* Affinage des règles de détection sur plus de 120 alertes hebdomadaires, réduisant les faux positifs de 35%.
+* Déploiement SIEM Wazuh : Installation et configuration d'une plateforme SIEM Wazuh sur 80+ terminaux, centralisant la supervision des événements de sécurité en temps réel.
+* Détection & Réponse (MTTD) : Analyse et corrélation de logs multi-sources pour identifier les anomalies, réduisant le délai moyen de détection (MTTD) de 40 %.
+* Optimisation SOC : Qualification et tri de 120+ alertes/semaine par l'affinement continu des règles de détection, diminuant les faux positifs de 35 % et optimisant le temps de réponse des analystes.
 
 ### 🖥️ Administrateur Système (Stage)
 **CAMTEL** | *Juil 2022 – Oct 2022*
-* Administration d'un environnement Active Directory (50+ comptes, GPO, RBAC).
-* Surveillance des journaux système et gestion des incidents de sécurité N1/N2.
+* Administration Active Directory : Gestion de l'identité et des accès pour 35+ utilisateurs (création de 50+ comptes, déploiement de GPO de sécurité, audit des privilèges), garantissant la conformité du SI.
+* Sécurité Opérationnelle : Surveillance proactive des journaux système, contribution à la résolution d'incidents de sécurité (N1/N2) et mise en œuvre d'actions correctives pour réduire la surface d'attaque.
 
 ---
 
