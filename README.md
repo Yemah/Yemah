@@ -73,9 +73,14 @@ Ce dépôt contient le code **Infrastructure as Code (IaC)** permettant de dépl
 
 Le provisioning est assuré par **Terraform** (modules dédiés par provider), et la configuration applicative (Nginx) par **Ansible**, appliquée de manière homogène sur les trois environnements.
 
+>**Architecture simplifier**
+
+<p align="center">
+  <a href="https://github.com/Yemah/clinique-chatelet-secure-infra"><img src="https://raw.githubusercontent.com/https://github.com/Yemah/ntic-center-infra" width="800" alt="Schéma d'architecture"></a>
+</p>
 ---
 
-➡️ **[Voir le repo](https://github.com/Yemah/clinique-chatelet-secure-infra)** 
+➡️ **[Voir le repo](https://github.com/Yemah/ntic-center-infra)** 
 
 Le document d'architecture complet (DAT) décrivant les choix de conception, les matrices de flux, la sécurité et les incidents rencontrés est disponible dans [`docs/DAT_NTIC_CENTER_CORPORATION.md`](docs/DAT_NTIC_CENTER_CORPORATION.md).
 
