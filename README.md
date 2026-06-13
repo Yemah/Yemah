@@ -63,7 +63,7 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 **📖 Description**
 
-Ce dépôt contient le code **Infrastructure as Code (IaC)** permettant de déployer et configurer l'infrastructure hybride de **NTIC CENTER CORPORATION**, répartie sur trois plans de contrôle :
+Ce dépôt contient le code **Infrastructure as Code (IaC)** permettant de déployer et configurer l'infrastructure hybride de l'entreprise fictif **NTIC CENTER CORPORATION**, répartie sur trois plans de contrôle :
 
 | Site | Plateforme | Rôle |
 |---|---|---|
