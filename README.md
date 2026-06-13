@@ -178,6 +178,8 @@ Automatisation & Documentation : Automatisation des tâches d'exploitation récu
 
 **Scripting & Cloud**
 
+[![Terraform](https://img.shields.io/badge/Terraform-1.15.5-844FBA?logo=terraform)](https://terraform.io)
+[![Ansible](https://img.shields.io/badge/Ansible-10.7.0-EE0000?logo=ansible)](https://ansible.com)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
