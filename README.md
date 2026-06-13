@@ -57,6 +57,30 @@ Ce portfolio documente la conception de A à Z d'une **infrastructure de santé 
 
 ➡️ **[Voir le repo](https://github.com/Yemah/clinique-chatelet-secure-infra)** · **[Voir la documentation](https://yemah.github.io/clinique-chatelet-secure-infra/)**
 
+---
+
+## Projet Terraform complet déployant une infra hybride : • vSphere 8 (Paris) – VM AD, Web interne • AWS (Abidjan) – EC2 + RDS MySQL • Azure – VM Zabbix + stockage • Terraform Cloud (backend) + Ansibl…
+
+**📖 Description**
+
+Ce dépôt contient le code **Infrastructure as Code (IaC)** permettant de déployer et configurer l'infrastructure hybride de **NTIC CENTER CORPORATION**, répartie sur trois plans de contrôle :
+
+| Site | Plateforme | Rôle |
+|---|---|---|
+| **Paris** | VMware vSphere 8 (on-premise) | Intranet d'entreprise (clone de template + cloud-init) |
+| **Abidjan** | AWS (`eu-west-1`) | Services publics : EC2 (Nginx) + RDS MySQL |
+| **Supervision** | Azure (`swedencentral`) | VM Zabbix pour la supervision globale |
+
+Le provisioning est assuré par **Terraform** (modules dédiés par provider), et la configuration applicative (Nginx) par **Ansible**, appliquée de manière homogène sur les trois environnements.
+
+---
+
+➡️ **[Voir le repo](https://github.com/Yemah/clinique-chatelet-secure-infra)** 
+
+Le document d'architecture complet (DAT) décrivant les choix de conception, les matrices de flux, la sécurité et les incidents rencontrés est disponible dans [`docs/DAT_NTIC_CENTER_CORPORATION.md`](docs/DAT_NTIC_CENTER_CORPORATION.md).
+
+---
+
 
 
 ## 💼 Expériences Professionnelles
